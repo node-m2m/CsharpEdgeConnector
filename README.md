@@ -236,7 +236,7 @@ async function main(){
     /**
      * Create an edge client
      */
-    let ec = new edge.client({ port:5300, ip:'127.0.0.1', secure:false, restart:false }) 
+    let ec = new edge.client({ port:5400, ip:'127.0.0.1', secure:false, restart:false }) 
 
     let interval = setInterval(async () => {
         // read the data from the edge connector
