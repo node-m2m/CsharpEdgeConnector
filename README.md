@@ -220,10 +220,7 @@ $ npm install m2m
 
 #### 2. Save the code below as client.js in the client directory.
 ```js
-const {User, Edge} = require('m2m')  
-
-// Create a user object to authenticate your edge application
-let user = new User()
+const { Edge } = require('m2m')  
 
 let edge = new Edge()
 
@@ -232,7 +229,7 @@ let n = 0
 async function main(){
 
     // authenticate the edge application
-    await user.connect() 
+    await edge.connect() 
 
     /**
      * Create an edge client
@@ -240,10 +237,11 @@ async function main(){
     let ec = new edge.client({ port:5400, ip:'127.0.0.1', secure:false, restart:false }) 
 
     let interval = setInterval(async () => {
+
         // read the data from the edge connector
         let data = await ec.read('random-data')
 
-        // stop the data collection after 5 samples
+        // stop collecting data after 5 samples
         if(n === 5){
             console.log('no. of sample data', n)
             return clearInterval(interval)
