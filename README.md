@@ -1,5 +1,5 @@
 
-## C# Edge Connector Server (Linux or Windows endpoint)
+## C# Edge Connector Server (Windows or Linux endpoint)
 ![](assets/csharpEdgeConnector.svg)
 
 In this quick tour, an edge client will attempt to capture data from a C# connector server application through inter-process communication (IPC).
