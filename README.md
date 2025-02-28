@@ -1,8 +1,8 @@
 
-## Edge C# Connector Application (Linux or Windows endpoint)
+## C# Edge Connector Server (Linux or Windows endpoint)
 ![](assets/csharpEdgeConnector.svg)
 
-In this quick tour, the edge client will attempt to capture data from a C# connector application through inter-process communication (IPC).
+In this quick tour, an edge client will attempt to capture data from a C# connector server application through inter-process communication (IPC).
 <br>
 
 The client will send a standard json payload {topic:"random-data", value:""} to the connector server where it will provide the random value. 
